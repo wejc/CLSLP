@@ -1,5 +1,0 @@
-#! /bin/bash
-
-gnuplot   Plot_Amp.gpl
-gnuplot   Plot_Phase.gpl
-

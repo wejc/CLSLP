@@ -1,6 +1,0 @@
-#! /bin/bash
-
-# rm -f *.png
-
-rm -Rf build/*
-
