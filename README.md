@@ -1,2 +1,2 @@
 # CLSLP
-Constrained Least-Squares Linear-Phase FIR Filter Synthesis [Computationally Efficient version in C++20 Language]
+Constrained Least-Squares Linear-Phase FIR Filter Synthesis [Computationally Efficient Version in C++20]
