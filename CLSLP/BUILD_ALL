@@ -1,0 +1,6 @@
+#! /bin/bash
+
+./CLEAN
+./BUILD_AND_RUN
+./GENERATE_PLOTS
+
