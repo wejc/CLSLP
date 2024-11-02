@@ -1,0 +1,13 @@
+
+set terminal png size 800,375
+
+set title  "Amp 1024-Coefficient Complex-Valued CLSLP [Dual-Band Bandpass] LPFIR Filter"
+set xlabel "Frequency, Normalized Hz"
+set ylabel "Response, dB"
+set xrange [-.5:.5]
+set yrange [-180:10]
+set grid
+
+set output 'Amp 1024-Coefficient Complex-Valued CLSLP [Dual-Band Bandpass] LPFIR Filter.png'
+plot 'Spectral.dat' with lines notitle
+

@@ -1,0 +1,12 @@
+
+set terminal png size 800,375
+
+set title "Phase 2049-Coef CLSLP LPFIR Filter (in order): LinAbs, ExpAbs, LinRel, ExpRel"
+set xlabel "Frequency, Normalized Hz"
+set ylabel "Phase, rad"
+set xrange [0:1]
+set yrange [-3.141592654:3.141592654]
+set grid
+
+set output 'Phase 2049-Coefficient Complex-Valued CLSLP LPFIR Filter.png'
+plot 'Phase.dat' with lines notitle

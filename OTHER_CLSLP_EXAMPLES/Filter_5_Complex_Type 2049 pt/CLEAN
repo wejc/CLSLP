@@ -1,0 +1,7 @@
+#! /bin/bash
+
+# rm -Rf *.png
+
+rm -Rf build/*
+
+

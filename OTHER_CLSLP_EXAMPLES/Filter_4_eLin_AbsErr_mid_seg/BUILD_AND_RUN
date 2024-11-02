@@ -1,0 +1,13 @@
+#! /bin/bash
+
+# Identify the subdirectories used in the build and populate the the build directory
+# cmake --fresh   -S .  -B build  -DCMAKE_BUILD_TYPE=DEBUG  -DCMAKE_VERBOSE_MAKEFILE=OFF
+cmake --fresh   -S .  -B build  -DCMAKE_BUILD_TYPE=RELEASE  -DCMAKE_VERBOSE_MAKEFILE=OFF
+
+# Compile the C++ sources
+cmake  --build  build
+
+echo
+
+# Create a new subdirectory for the new software
+build/CLSLP

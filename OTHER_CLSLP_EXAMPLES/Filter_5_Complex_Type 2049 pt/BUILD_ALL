@@ -1,0 +1,10 @@
+#! /bin/bash
+
+echo
+echo
+echo ">> Filter_5_Complex_Type 2049 pt"
+
+./CLEAN
+./BUILD_AND_RUN
+./GENERATE_PLOTS
+

@@ -1,0 +1,10 @@
+#! /bin/bash
+
+echo
+echo
+echo ">> Filter_2_eExp_AbsErr_mid_seg"
+
+./CLEAN
+./BUILD_AND_RUN
+./GENERATE_PLOTS
+
