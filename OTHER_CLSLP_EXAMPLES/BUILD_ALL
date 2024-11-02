@@ -1,0 +1,89 @@
+#! /bin/bash
+
+rm -Rf ../DOCS/CLSD\ Description\ Doc/*.png
+
+cd Filter_1_eExp_RelErr_mid_seg
+echo
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+echo "> Filter_1_eExp_RelErr_mid_seg 501"
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+echo
+./CLEAN;
+./BUILD_AND_RUN;
+./GENERATE_PLOTS;
+cp *.png ../../DOCS/CLSLP\ Description\ Doc/
+
+sleep 2s
+
+cd ..
+cd Filter_2_eExp_AbsErr_mid_seg
+echo
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+echo "> Filter_2_eExp_AbsErr_mid_seg #501 Real"
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+echo
+./CLEAN;
+./BUILD_AND_RUN;
+./GENERATE_PLOTS;
+cp *.png ../../DOCS/CLSLP\ Description\ Doc/
+
+sleep 2s
+
+cd ..
+cd Filter_3_eLin_RelErr_mid_seg
+echo
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+echo "> Filter_3_eLin_RelErr_mid_seg #501 Real"
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+echo
+./CLEAN;
+./BUILD_AND_RUN;
+./GENERATE_PLOTS;
+cp *.png ../../DOCS/CLSLP\ Description\ Doc/
+
+sleep 2s
+
+cd ..
+cd Filter_4_eLin_AbsErr_mid_seg
+echo
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+echo "> Filter_4_eLin_AbsErr_mid_seg #501 Real"
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+echo
+./CLEAN;
+./BUILD_AND_RUN;
+./GENERATE_PLOTS;
+cp *.png ../../DOCS/CLSLP\ Description\ Doc/
+
+sleep 2s
+
+cd ..
+cd "Filter_5_Complex_Type 2049 pt"
+echo
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+echo ">> Filter_5_Complex_Type #2049  Complex"
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+echo
+./CLEAN;
+./BUILD_AND_RUN;
+./GENERATE_PLOTS;
+cp *.png ../../DOCS/CLSLP\ Description\ Doc/
+
+sleep 2s
+
+cd ..
+cd "Filter_6_Complex_Type 1024 pt"
+echo
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+echo ">> Filter_6_Complex_Type #1024 Complex"
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+echo
+./CLEAN;
+./BUILD_AND_RUN;
+./GENERATE_PLOTS;
+cp *.png ../../DOCS/CLSLP\ Description\ Doc/
+
+sleep 2s
+
+cd ..
+
