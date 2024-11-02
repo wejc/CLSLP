@@ -1,0 +1,26 @@
+#! /bin/bash
+
+./CLEAN_ALL
+
+echo
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+echo "> BUILDING CLSLP"
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+echo
+
+cd CLSLP
+# ./CLEAN
+./BUILD_ALL
+cd ..
+
+echo
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+echo "> BUILDING CLSLP EXAMPLES"
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+echo
+
+cd OTHER_CLSLP_EXAMPLES
+# ./CLEAN_ALL
+./BUILD_ALL
+cd ..
+

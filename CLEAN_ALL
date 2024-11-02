@@ -1,0 +1,8 @@
+#! /bin/bash
+
+cd  CLSLP/
+./CLEAN
+cd  ../OTHER_CLSLP_EXAMPLES
+./CLEAN_ALL
+cd ..
+
