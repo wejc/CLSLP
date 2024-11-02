@@ -1,0 +1,41 @@
+#! /bin/bash
+
+# Create a PDF file from' 'CLSLP.h'
+enscript --landscape -o CLSLP__h.ps  "/home/wej/WORK/CLSLP/OTHER_CLSLP_EXAMPLES/Filter_1_eExp_RelErr_mid_seg/CLSLP.h"
+ps2pdf    CLSLP__h.ps
+
+echo
+
+# Create a PDF file from' 'CLSLP.cpp'
+enscript --landscape  -o CLSLP__cpp.ps "/home/wej/WORK/CLSLP/OTHER_CLSLP_EXAMPLES/Filter_1_eExp_RelErr_mid_seg/CLSLP.cpp"
+ps2pdf    CLSLP__cpp.ps
+
+echo
+
+# Create a PDF file from 'Start.cpp'
+enscript --landscape  -o Start__cpp.ps   "/home/wej/WORK/CLSLP/OTHER_CLSLP_EXAMPLES/Filter_1_eExp_RelErr_mid_seg/Start.cpp"
+ps2pdf    Start__cpp.ps
+
+echo
+
+# Merge all the previous PDFs into one large PDF
+pdfunite  CLSLP\ Description\ Doc/Constrained\ Least-Squares\ FIR\ Filter\ Synthesis.pdf \
+          Published\ Papers/constrained_least_squares_design_jaffer_jones.pdf \
+          Published\ Papers/weighted_least_squares_design_and_characterization_of_complex_fir_filters.pdf \
+          Start__cpp.pdf \
+          CLSLP__h.pdf \
+          CLSLP__cpp.pdf \
+          "CLSLP Constrained Least-Squares Linear-Phase FIR Filter Synthesis Docs and Software.pdf"
+
+echo
+
+echo
+echo ">>Output File Complete:"
+echo " 'CLSLP Constrained Least-Squares Linear-Phase FIR Filter Synthesis Docs and Software.pdf'"
+echo
+
+# Cleanup
+rm  CLSLP__h.ps    CLSLP__cpp.ps
+rm  CLSLP__h.pdf   CLSLP__cpp.pdf
+rm  Start__cpp.ps  Start__cpp.pdf
+
